@@ -33,12 +33,8 @@ The Job Application Tracker is a Chrome extension designed to help users manage 
 
 ```
 your-extension/
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
+├── logo.png
 ├── background.js
-├── content.js
 ├── manifest.json
 ├── options.html
 ├── options.js
