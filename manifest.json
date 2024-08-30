@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Job Application Tracker",
+    "version": "1.0",
+    "permissions": ["identity", "storage", "activeTab", "scripting"],
+    "oauth2": {
+      "client_id": "YOUR_API_KEY",
+      "scopes": [
+        "https://www.googleapis.com/auth/spreadsheets"
+      ]
+    },
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon":"logo.png"
+    },
+    "options_page": "options.html"
+  }
+  
+  

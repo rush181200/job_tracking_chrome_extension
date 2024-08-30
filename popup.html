@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Tracker</title>
+  <style>
+    body {
+      width: 400px; /* Adjust width as needed */
+      height: auto; /* Adjust height as needed */
+      padding: 10px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    label, input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Save Application</h1>
+  <form id="application-form">
+    <label>Company Name:</label>
+    <input type="text" id="company-name" required>
+    <label>Position:</label>
+    <input type="text" id="position" required>
+    <label>Website Link:</label>
+    <input type="url" id="website-link" required>
+    <label>Date:</label>
+    <input type="date" id="apply-date" disabled>
+    <label>Time:</label>
+    <input type="time" id="apply-time" disabled>
+    <label>Notes:</label>
+    <textarea id="notes" rows="4"></textarea>
+    <button type="submit">Save</button>
+  </form>
+  <hr>
+  <button id="settings-button">Settings</button>
+  <script src="popup.js"></script>
+</body>
+</html>
